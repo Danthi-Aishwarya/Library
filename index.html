@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div>
+        <button type="button" id="newbook">NEW BOOK</button>
+      </div>
+    </div>
+
+    <dialog id="dialog">
+      <form id="book">
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" /><br /><br />
+
+        <label for="author">Author:</label><br />
+        <input type="text" id="author" name="author" /><br /><br />
+
+        <label for="page">Number of Pages:</label><br />
+        <input type="number" id="page" name="page" /><br /><br />
+
+        <label for="read">Have Read:</label><br />
+        <input type="radio" id="read" name="readstatus" value="Read" />
+        <label for="read">read</label><br />
+        <input
+          type="radio"
+          id="havenotread"
+          name="readstatus"
+          value="HaveNotRead"
+        />
+        <label for="havenotread">have not read</label><br /><br />
+
+        <button type="submit" id="submit_book">Submit</button>
+        <button type="button" id="close_dialog">Close</button>
+      </form>
+    </dialog>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>PageNo</th>
+            <th>Read?</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
